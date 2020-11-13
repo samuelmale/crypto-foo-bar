@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cryptography FooBar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"
+        integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Crypto FooBar</h1>
+    <p>An encryption tool that relies on the AES standard</p>
+    <div>
+        <form>
+            <fieldset>
+                <legend><b>Encryption:</b></legend>
+                <p>
+                    <label for="data">Enter Data:</label>
+                    <textarea id="data" name="data" rows="4" cols="50" style="vertical-align: top;"></textarea>
+                </p>
+                <p>
+                    <label for="key">Enter Key:</label>
+                    <input type="text" id="key" />
+                </p>
+                <div>
+                    <input type="button" value="Encrypt" id="encrypt">
+                </div>
+                <p>
+                    <label for="result">Encrypted Data:</label>
+                    <textarea id="result" name="result" rows="4" cols="50" style="vertical-align: top;"></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><b>Decryption:</b></legend>
+                <p>
+                    <label for="encrypted-data">Enter Data:</label>
+                    <textarea id="encrypted-data" name="encrypted-data" rows="4" cols="50"
+                        style="vertical-align: top;"></textarea>
+                </p>
+                <p>
+                    <label for="cipher-key">Enter Key:</label>
+                    <input type="text" id="cipher-key" />
+                <div>
+                    <input type="button" value="Decrypt" id="decrypt">
+                </div>
+                </p>
+                <p>
+                    <label for="decrypted-data">Decrypted Data:</label>
+                    <textarea id="decrypted-data" name="decrypted-data" id="decrypted-data" rows="4" cols="50"
+                        style="vertical-align: top;"></textarea>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+<script src="src/js/crypto.js" type="text/javascript"></script>
+
+</html>
